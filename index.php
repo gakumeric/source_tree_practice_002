@@ -10,18 +10,12 @@
 	$result = add(1,1);
 	echo $result;
 
-	class Robot {
-		private $name;
-
-		function setName($name) {
-			$this->name = $name;
-		}
-		function getName {
-			return $this->name;
-		}
+	function minus($num1, $num2) {
+		$result = $num1 - $num2;
+		return $result;
 	}
 
-	$robot = new Robot();
-	$robot->setName('ドラえもん');
+	$result = minus(10,4);
+	echo $result;
 
 ?>
