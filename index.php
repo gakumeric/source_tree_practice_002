@@ -1,5 +1,5 @@
 <?php
-
+	dehine('DUBUG', TRUE);
 	echo 'Hello world';
 
 	function add($num1, $num2) {
@@ -17,5 +17,14 @@
 
 	$result = minus(10,4);
 	echo $result;
+
+
+	// デバッグ用関数の定義
+	function org_echo($val) {
+		if (DEBUG) {
+			echo $val;
+			echo '<br>';
+		}
+	}
 
 ?>
